@@ -1,31 +1,37 @@
 package com.example.fengfeng.db;
 
-public class Province {
+import org.litepal.crud.DataSupport;
+
+public class Province extends DataSupport {
     private int id;
-    private String provinceNNNName;
-    private int provienceCod;
+    private String provinceName;
+    private int provienceCode;
 
-    public int getProvienceCod() {
-        return provienceCod;
+    public int getProvienceCode() {
+
+        return provienceCode;
     }
 
-    public void setProvienceCod(int provienceCod) {
-        this.provienceCod = provienceCod;
+    public void setProvienceCode(int provienceCod) {
+
+        this.provienceCode = provienceCode;
     }
 
-    public String getProvinceNNNName() {
-        return provinceNNNName;
+    public String getProvinceName() {
+        return provinceName;
     }
 
-    public void setProvinceNNNName(String provinceNNNName) {
-        this.provinceNNNName = provinceNNNName;
+    public void setProvinceName(String provinceNNNName) {
+        this.provinceName = provinceNNNName;
     }
 
     public int getId() {
+
         return id;
     }
 
     public void setId(int id) {
+
         this.id = id;
     }
 }
